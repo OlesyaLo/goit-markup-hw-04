@@ -54,6 +54,7 @@ button {
   cursor: pointer;
   border: none;
   border-radius: 4px;
+  outline: none;
 }
 
 address {
@@ -74,6 +75,7 @@ img {
 
 .link {
   text-decoration: none;
+  outline: none;
 }
 
 .container {
@@ -385,7 +387,16 @@ img {
   fill: currentColor; 
 }
 
-/*.team-soc-link:hover,
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: var(--icon-soc-bg-accent-color);
+  color: var(--icon-soc-accent-color);
+}
+
+
+/* (first option for total hover/focus on the icon and their bg)
+
+.team-soc-link:hover,
 .team-soc-link:focus {
   background-color: var(--icon-soc-bg-accent-color);
 }
@@ -397,6 +408,7 @@ img {
 .team-soc-link:focus .team-soc-icon {
   fill: var(--icon-soc-accent-color);
 }
+*/
 
 /*-------------------------CLIENTS-LOGOS-------------------------*/
 .clients-section {
@@ -445,13 +457,12 @@ img {
   border-color: var(--icon-clients-logo-accent-color);
 }
 
-.clients-link:hover .clients-logo-icon {
-  fill: var(--icon-clients-logo-accent-color);
-}
-
+.clients-link:hover .clients-logo-icon,
 .clients-link:focus .clients-logo-icon {
   fill: var(--icon-clients-logo-accent-color);
 }
+
+
 
 
 /*-------------------------FOOTER-------------------------*/
