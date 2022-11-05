@@ -191,6 +191,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 1600px;
+  margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -363,7 +364,7 @@ img {
   margin-right: 0;
 }
 
-.team-item-container {
+.team-item-text-wrap {
   display: block;
   width: 270px;
   padding: 30px 0;
@@ -675,7 +676,7 @@ margin-bottom: 20px;
 .portfolio-projects-link:focus {
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);}
 
-.portfolio-projects-text-container {
+.portfolio-projects-text-wrap {
   padding: 20px 24px;
   border-top: none;
 }
