@@ -554,7 +554,7 @@ img {
 .footer-soc-text {
 font-weight: 700;
 font-size: 14px;
-line-height: 1,14;
+line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--background-main-color);
@@ -596,7 +596,10 @@ margin-bottom: 20px;
 
 /*-----------------PORTFOLIO-BTN------------------*/
 
-.portfolio-container {
+.portfolio-section {
+}
+
+.portfolio-section-container {
 }
 
 .visually-hidden {
@@ -613,11 +616,22 @@ margin-bottom: 20px;
 }
 
 .portfolio-btn-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 .portfolio-btn-item {
+  margin-right: 8px;
 }
+
+.portfolio-btn-item:last-child {
+  margin-right: 0;
+}
+
 .portfolio-btn {
+  display: block;
+  padding: 6px 22px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -639,31 +653,7 @@ margin-bottom: 20px;
   color: var(--btn-text-color);
 }
 
-/*-----------------------PORTFOLIO-PROJECTS--------------------*/
-.portfolio-section {
-}
-
-.portfolio-section-container {
-}
-
-.portfolio-btn-list {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.portfolio-btn-item {
-  margin-right: 8px;
-}
-
-.portfolio-btn-item:last-child {
-  margin-right: 0;
-}
-
-.portfolio-btn {
-  display: block;
-  padding: 6px 22px;
-}
+/*-----------------PORTFOLIO-PROJECTS----------------*/
 
 .portfolio-projects-list {
   display: flex;
@@ -672,17 +662,22 @@ margin-bottom: 20px;
 }
 
 .portfolio-projects-item {
-  flex-basis: calc(100% - 60px) / 3;
+  flex-basis: calc((100% - 60px) / 3);
   width: 370px;
 }
 
-.portfolio-projects-item-container {
-  padding: 20px 24px;
-  border: 1px solid #eeeeee;
-  border-top: none;
+.portfolio-projects-link {
+  display: block;
+  border: 1px solid #EEEEEE;
 }
 
-.portfolio-projects-link {
+.portfolio-projects-link:hover,
+.portfolio-projects-link:focus {
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);}
+
+.portfolio-projects-text-container {
+  padding: 20px 24px;
+  border-top: none;
 }
 
 .portfolio-projects-img {
