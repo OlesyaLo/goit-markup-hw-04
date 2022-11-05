@@ -20,6 +20,7 @@
   --icon-soc-main-color: #AFB1B8;
   --icon-soc-accent-color: #ffffff;
   --icon-soc-bg-main-color: #ffffff;
+  --icon-soc-bg-footer-color: rgba(255, 255, 255, 0.1);
   --icon-soc-bg-accent-color: #2196f3;
   --icon-clients-logo-main-color: #AFB1B8;
   --icon-clients-logo-accent-color: #2196f3;
@@ -89,7 +90,7 @@ img {
   padding: 94px 0;
 }
 
-/*------------------------HEADER-------------------------*/
+/*-------------------HEADER-----------------*/
 .header {
   align-items: baseline;
   border-bottom: 1px solid #ececec;
@@ -131,7 +132,7 @@ img {
 }
 
 .header-nav-link {
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -155,7 +156,8 @@ img {
 
 .header-mail,
 .header-tel {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -174,7 +176,13 @@ img {
   color: var(--header-footer-accent-color);
 }
 
-/*-------------------------HERO-------------------------*/
+.header-mail .header-icon-mail,
+.header-tel .header-icon-mail {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+/*---------------------HERO--------------------*/
 
 .hero-section {
   background-color: var(--background-second-color);
@@ -220,7 +228,7 @@ img {
   background-color: var(--btn-accent-color);
 }
 
-/*-------------------------ADVANTAGES-------------------------*/
+/*---------------ADVANTAGES-----------------*/
 
 .advantages-section {
   width: 100%;
@@ -260,11 +268,27 @@ img {
   font-size: 14px;
   color: var(--title-second-color);
 }
+
 .advantages-item-text {
   line-height: 1.71;
   color: var(--text-second-color);
 }
-/*-------------------------SERVICES-------------------------*/
+
+.advantages-item-box {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border-radius: 4px;  
+  background-color: var(--background-third-color);
+}
+
+.advantages-item-icon {
+  fill: currentColor;
+}
+
+/*----------------SERVICES------------------*/
 .services-section {
   width: 100%;
   padding-bottom: 94px;
@@ -303,7 +327,7 @@ img {
 .services-img-3 {
 }
 
-/*-------------------------TEAM-------------------------*/
+/*------------------TEAM-------------------*/
 
 .team-section {
   width: 100%;
@@ -410,7 +434,7 @@ img {
 }
 */
 
-/*-------------------------CLIENTS-LOGOS-------------------------*/
+/*----------------CLIENTS-LOGOS---------------*/
 .clients-section {
   width: 100%;
 }
@@ -462,17 +486,20 @@ img {
   fill: var(--icon-clients-logo-accent-color);
 }
 
-
-
-
-/*-------------------------FOOTER-------------------------*/
+/*------------------FOOTER-----------------*/
 
 .footer-section {
   background-color: var(--background-second-color);
   padding: 60px 0;
 }
 
-.footer-container {
+.footer-general-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-address-container {
+  margin-right: 70px;
 }
 
 .footer-logo {
@@ -524,7 +551,50 @@ img {
   cursor: pointer;
 }
 
-/*-----------------------PORTFOLIO-BTN----------------------*/
+.footer-soc-text {
+font-weight: 700;
+font-size: 14px;
+line-height: 1,14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--background-main-color);
+margin-bottom: 20px;
+}
+
+.footer-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-soc-item {
+  width: 44px;
+  height: 44px;
+}
+
+.footer-soc-link {
+  width: 100%;
+  height: 100%;
+  background: var(--icon-soc-bg-footer-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--icon-soc-accent-color);
+}
+
+.footer-soc-icon {
+  fill: currentColor; 
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--icon-soc-bg-accent-color);
+  color: var(--icon-soc-accent-color);
+}
+
+
+/*-----------------PORTFOLIO-BTN------------------*/
 
 .portfolio-container {
 }
